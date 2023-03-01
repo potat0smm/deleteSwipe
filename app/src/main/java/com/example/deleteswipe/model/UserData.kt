@@ -1,6 +1,6 @@
 package com.example.deleteswipe.model
 
-data class UserData(
-    val userName: String,
-    val userXz: String
+data class UserData (
+    var userName:String,
+    var userMb:String
 )
