@@ -1,5 +1,6 @@
 package com.example.deleteswipe
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -42,6 +43,7 @@ class MainActivity : AppCompatActivity() {
         addsBtn.setOnClickListener { addInfo()}
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     private fun addInfo() {
         val inflater = LayoutInflater.from(this)
         val view = inflater.inflate(R.layout.add_item,null)
